@@ -11,7 +11,7 @@ document.addEventListener('click', (e) => {
 		e.stopImmediatePropagation();
 		e.preventDefault();
 
-		input.value = elem.textContent.replace('Nr. ', '#');
+		input.value = elem.textContent.replace('Nr. ', '#').replace(' - ', '');
 		input.select();
 		document.execCommand('Copy');
 	}
@@ -21,7 +21,12 @@ document.addEventListener('click', (e) => {
 // format card id
 (function () {
 	const elems = document.querySelectorAll('.card-short-id');
-	for (let elem of elems) {
-		elem.textContent = elem.textContent.replace('Nr. ', '#');
+	for (let elem of elems) {	
+		var parentText = elem.parentNode.parentNode.parentNode.href
+		var hashRegex = /\/c\/(\w*)\/\d+-.*/; 
+		var results = hashRegex.exec(parentText)[1];
+
+		// elem.textContent = elem.textContent.replace('Nr. ', '#');
+		elem.textContent = results + ' - ';
 	}
 })()
