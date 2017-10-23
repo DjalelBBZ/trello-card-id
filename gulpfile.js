@@ -3,7 +3,7 @@ const gulp = require('gulp'),
       rename = require('gulp-rename'),
       clean = require('gulp-clean');
 
-const extensionName = 'trello-card-id';
+const extensionName = 'trello-card-hash';
 
 gulp.task('default', ['firefox', 'chrome']);
 

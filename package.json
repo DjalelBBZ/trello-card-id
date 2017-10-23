@@ -1,7 +1,7 @@
 {
-  "id": "trello-card-hash",
+  "id": "trello-card-hash@djalelbbz.com",
   "title": "Trello Card Hash",
-  "name": "trello-card-id",
+  "name": "trello-card-hash",
   "version": "1.0.1",
   "description": "Shows well formatted Trello card IDs for use in commits and for other quick references. Copies ID by clicking on it.",
   "author": "Alexander Ploner",

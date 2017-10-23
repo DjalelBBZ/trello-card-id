@@ -1,7 +1,7 @@
 {
     "applications": {
         "gecko": {
-	       "id": "trello-card-hash"
+	       "id": "trello-card-hash@djalelbbz.com"
         }
     },
     "manifest_version": 2,
